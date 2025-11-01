@@ -1,12 +1,104 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import Icon from "@/components/ui/icon";
 
 const Index = () => {
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/79811233863', '_blank');
+  };
+
+  const handleTelegramClick = () => {
+    window.open('https://t.me/+79811233863', '_blank');
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:+79811233863';
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-4">
+      <Card className="max-w-2xl w-full p-8 md:p-12 shadow-2xl">
+        <div className="text-center mb-8">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-primary rounded-full mb-6">
+            <Icon name="Hammer" className="text-white" size={40} />
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            Профессиональное<br />ШТРОБЛЕНИЕ СТЕН
+          </h1>
+          <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+            Качественно и быстро подготовим стены под проводку и коммуникации
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 mb-10">
+          <div className="text-center p-4">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full mb-3">
+              <Icon name="Award" className="text-secondary" size={32} />
+            </div>
+            <h3 className="font-bold text-primary mb-2">Специализация</h3>
+            <p className="text-sm text-muted-foreground">
+              Только штробление — наша экспертиза
+            </p>
+          </div>
+
+          <div className="text-center p-4">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full mb-3">
+              <Icon name="Settings" className="text-secondary" size={32} />
+            </div>
+            <h3 className="font-bold text-primary mb-2">Оборудование</h3>
+            <p className="text-sm text-muted-foreground">
+              Современные инструменты — минимум пыли
+            </p>
+          </div>
+
+          <div className="text-center p-4">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full mb-3">
+              <Icon name="Zap" className="text-secondary" size={32} />
+            </div>
+            <h3 className="font-bold text-primary mb-2">Скорость</h3>
+            <p className="text-sm text-muted-foreground">
+              Быстрая работа без повреждений
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-primary text-white rounded-lg p-8 mb-6">
+          <h2 className="text-2xl font-bold mb-6 text-center">Звоните сейчас!</h2>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <Button 
+              onClick={handleWhatsAppClick}
+              size="lg"
+              className="bg-[#25D366] hover:bg-[#20BA5A] text-white font-semibold flex items-center gap-2"
+            >
+              <Icon name="MessageCircle" size={20} />
+              WhatsApp
+            </Button>
+            
+            <Button 
+              onClick={handleTelegramClick}
+              size="lg"
+              className="bg-[#0088cc] hover:bg-[#0077b5] text-white font-semibold flex items-center gap-2"
+            >
+              <Icon name="Send" size={20} />
+              Telegram
+            </Button>
+          </div>
+
+          <div className="text-center">
+            <button 
+              onClick={handlePhoneClick}
+              className="text-3xl font-bold hover:underline transition-all"
+            >
+              +7 (981) 123-38-63
+            </button>
+          </div>
+        </div>
+
+        <p className="text-center text-xl font-semibold text-primary">
+          Доверьтесь профессионалам!
+        </p>
+      </Card>
     </div>
   );
 };
