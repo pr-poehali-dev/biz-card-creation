@@ -62,10 +62,10 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="bg-primary text-white rounded-lg p-8 mb-6">
-          <h2 className="text-2xl font-bold mb-6 text-center">Звоните сейчас!</h2>
+        <div className="bg-primary text-white rounded-lg p-6 mb-4">
+          <h2 className="text-xl font-bold mb-4 text-center">Звоните сейчас!</h2>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-4">
             <Button 
               onClick={handleWhatsAppClick}
               size="lg"
@@ -88,14 +88,14 @@ const Index = () => {
           <div className="text-center">
             <button 
               onClick={handlePhoneClick}
-              className="text-3xl font-bold hover:underline transition-all"
+              className="text-2xl font-bold hover:underline transition-all"
             >
               +7 (981) 123-38-63
             </button>
           </div>
         </div>
 
-        <p className="text-center text-xl font-semibold text-primary">
+        <p className="text-center text-lg font-semibold text-primary">
           Доверьтесь профессионалам!
         </p>
       </Card>
