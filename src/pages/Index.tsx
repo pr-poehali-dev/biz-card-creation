@@ -16,8 +16,12 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center p-4">
-      <Card className="max-w-2xl w-full p-8 md:p-12 shadow-2xl">
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center p-4 relative">
+      <div 
+        className="absolute inset-0 opacity-10 bg-cover bg-center"
+        style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/3d98fcc0-6abc-458f-bf37-96d1b9db5618/files/e75c248c-1d49-48aa-8886-bbb2df78f720.jpg)' }}
+      />
+      <Card className="max-w-2xl w-full p-8 md:p-12 shadow-2xl relative z-10">
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-secondary rounded-full mb-6">
             <Icon name="CircuitBoard" className="text-white" size={40} />
