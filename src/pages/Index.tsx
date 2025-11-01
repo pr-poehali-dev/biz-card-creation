@@ -22,7 +22,7 @@ const Index = () => {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-secondary rounded-full mb-6">
             <Icon name="CircuitBoard" className="text-white" size={40} />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-4">
             Профессиональное<br />ШТРОБЛЕНИЕ СТЕН
           </h1>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto">
