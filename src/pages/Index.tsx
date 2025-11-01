@@ -37,7 +37,7 @@ const Index = () => {
             </div>
             <h3 className="font-bold text-primary mb-2">Специализация</h3>
             <p className="text-sm text-muted-foreground">
-              Только штробление — наша экспертиза
+              Только штробление стен
             </p>
           </div>
 
