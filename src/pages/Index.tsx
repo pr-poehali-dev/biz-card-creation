@@ -19,8 +19,8 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center p-4">
       <Card className="max-w-2xl w-full p-8 md:p-12 shadow-2xl">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-primary rounded-full mb-6">
-            <Icon name="Hammer" className="text-white" size={40} />
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-secondary rounded-full mb-6">
+            <Icon name="Drill" className="text-white" size={40} />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             Профессиональное<br />ШТРОБЛЕНИЕ СТЕН
