@@ -25,7 +25,7 @@ const Index = () => {
           <h1 className="text-5xl md:text-6xl font-bold text-primary mb-4">
             Профессиональное<br />ШТРОБЛЕНИЕ СТЕН
           </h1>
-          <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-xl mx-auto">
             Качественно и быстро подготовим стены под проводку и коммуникации
           </p>
         </div>
@@ -35,8 +35,8 @@ const Index = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full mb-3">
               <Icon name="Award" className="text-secondary" size={32} />
             </div>
-            <h3 className="font-bold text-primary mb-2">Специализация</h3>
-            <p className="text-sm text-muted-foreground">
+            <h3 className="text-lg font-bold text-primary mb-2">Специализация</h3>
+            <p className="text-base text-muted-foreground">
               Только штробление стен
             </p>
           </div>
@@ -45,8 +45,8 @@ const Index = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full mb-3">
               <Icon name="Settings" className="text-secondary" size={32} />
             </div>
-            <h3 className="font-bold text-primary mb-2">Оборудование</h3>
-            <p className="text-sm text-muted-foreground">
+            <h3 className="text-lg font-bold text-primary mb-2">Оборудование</h3>
+            <p className="text-base text-muted-foreground">
               Современные инструменты — минимум пыли
             </p>
           </div>
@@ -55,15 +55,15 @@ const Index = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full mb-3">
               <Icon name="Zap" className="text-secondary" size={32} />
             </div>
-            <h3 className="font-bold text-primary mb-2">Скорость</h3>
-            <p className="text-sm text-muted-foreground">
+            <h3 className="text-lg font-bold text-primary mb-2">Скорость</h3>
+            <p className="text-base text-muted-foreground">
               Быстрая работа без повреждений
             </p>
           </div>
         </div>
 
         <div className="bg-primary text-white rounded-lg p-6 mb-4">
-          <h2 className="text-xl font-bold mb-4 text-center">Звоните сейчас!</h2>
+          <h2 className="text-2xl font-bold mb-4 text-center">Звоните сейчас!</h2>
           
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-4">
             <Button 
@@ -88,14 +88,14 @@ const Index = () => {
           <div className="text-center">
             <button 
               onClick={handlePhoneClick}
-              className="text-2xl font-bold hover:underline transition-all"
+              className="text-3xl font-bold hover:underline transition-all"
             >
               +7 (981) 123-38-63
             </button>
           </div>
         </div>
 
-        <p className="text-center text-lg font-semibold text-primary">
+        <p className="text-center text-xl font-semibold text-primary">
           Доверьтесь профессионалам!
         </p>
       </Card>
