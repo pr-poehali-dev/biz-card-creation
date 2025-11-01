@@ -23,51 +23,61 @@ const Index = () => {
       />
       <Card className="max-w-2xl w-full p-8 md:p-12 shadow-2xl relative z-10">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-secondary rounded-full mb-6">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-secondary rounded-full mb-4">
             <Icon name="CircuitBoard" className="text-white" size={40} />
           </div>
+          <div className="inline-block bg-amber-400 text-primary font-bold text-lg px-6 py-2 rounded-full mb-4 animate-pulse">
+            🔥 СКИДКА 15% ПРИ ЗАКАЗЕ СЕГОДНЯ
+          </div>
           <h1 className="text-5xl md:text-6xl font-bold text-primary mb-4">
-            Профессиональное<br />ШТРОБЛЕНИЕ СТЕН
+            ШТРОБЛЕНИЕ СТЕН
           </h1>
+          <p className="text-2xl font-semibold text-secondary mb-3">
+            от 150 ₽/метр
+          </p>
           <p className="text-xl text-muted-foreground max-w-xl mx-auto">
-            Качественно и быстро подготовим стены под проводку и коммуникации
+            Профессионально • Быстро • Без пыли
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-10">
-          <div className="text-center p-4">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full mb-3">
-              <Icon name="Award" className="text-secondary" size={32} />
+        <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg p-6 mb-8 border-2 border-amber-400">
+          <h2 className="text-2xl font-bold text-primary mb-4 text-center">✨ Почему выбирают нас</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary rounded-full mb-3">
+                <Icon name="CheckCircle2" className="text-white" size={32} />
+              </div>
+              <h3 className="text-lg font-bold text-primary mb-2">Без пыли</h3>
+              <p className="text-base text-muted-foreground">
+                Профессиональный пылесос
+              </p>
             </div>
-            <h3 className="text-lg font-bold text-primary mb-2">Специализация</h3>
-            <p className="text-base text-muted-foreground">
-              Только штробление стен
-            </p>
-          </div>
 
-          <div className="text-center p-4">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full mb-3">
-              <Icon name="Settings" className="text-secondary" size={32} />
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary rounded-full mb-3">
+                <Icon name="Clock" className="text-white" size={32} />
+              </div>
+              <h3 className="text-lg font-bold text-primary mb-2">За 1 день</h3>
+              <p className="text-base text-muted-foreground">
+                Выполним работу быстро
+              </p>
             </div>
-            <h3 className="text-lg font-bold text-primary mb-2">Оборудование</h3>
-            <p className="text-base text-muted-foreground">
-              Современные инструменты — минимум пыли
-            </p>
-          </div>
 
-          <div className="text-center p-4">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full mb-3">
-              <Icon name="Zap" className="text-secondary" size={32} />
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary rounded-full mb-3">
+                <Icon name="Shield" className="text-white" size={32} />
+              </div>
+              <h3 className="text-lg font-bold text-primary mb-2">Гарантия</h3>
+              <p className="text-base text-muted-foreground">
+                Качество работы
+              </p>
             </div>
-            <h3 className="text-lg font-bold text-primary mb-2">Скорость</h3>
-            <p className="text-base text-muted-foreground">
-              Быстрая работа без повреждений
-            </p>
           </div>
         </div>
 
-        <div className="bg-primary text-white rounded-lg p-6 mb-4">
-          <h2 className="text-2xl font-bold mb-4 text-center">Звоните сейчас!</h2>
+        <div className="bg-gradient-to-r from-secondary to-primary text-white rounded-lg p-8 mb-4 shadow-lg">
+          <h2 className="text-3xl font-bold mb-2 text-center">📞 ЗАКАЖИТЕ ПРЯМО СЕЙЧАС!</h2>
+          <p className="text-center text-lg mb-6 opacity-90">Бесплатная консультация и расчёт стоимости</p>
           
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-4">
             <Button 
@@ -99,9 +109,14 @@ const Index = () => {
           </div>
         </div>
 
-        <p className="text-center text-xl font-semibold text-primary">
-          Доверьтесь профессионалам!
-        </p>
+        <div className="bg-slate-100 rounded-lg p-4 text-center">
+          <p className="text-lg text-muted-foreground mb-2">
+            ⭐ Работаем по Санкт-Петербургу и области
+          </p>
+          <p className="text-base text-muted-foreground">
+            Выезд мастера на объект — БЕСПЛАТНО
+          </p>
+        </div>
       </Card>
     </div>
   );
